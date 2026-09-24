@@ -1,16 +1,53 @@
-# React + Vite
+# ShopEase - E-Commerce Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ShopEase is a modern e-commerce frontend application built with React and Vite.
 
-Currently, two official plugins are available:
+It provides a complete shopping experience with product browsing, product details, cart management, checkout, order tracking, and separate admin functionality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The frontend communicates with a Spring Boot REST API backend for authentication, products, cart, orders, payments, and admin operations.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### 👤 User Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- User registration and login
+- JWT-based authentication
+- Browse products without login
+- Search products
+- Filter products by maximum price
+- View product details
+- Add products to cart
+- Increase/decrease cart quantity
+- Remove products from cart
+- View cart total
+- Checkout
+- Place orders
+- View order history
+- Cancel eligible orders
+- Track order status
+- Logout
+
+### 🛠️ Admin Features
+
+- Admin authentication
+- Admin dashboard
+- View total products
+- View total users
+- View total orders
+- View total sales
+- View order status statistics
+- View recent orders
+- View inventory
+- Add products
+- Edit products
+- Delete products
+- Search/filter products
+- Manage customer orders
+- Update order status
+
+Order status flow:
+
+```text
+PLACED → SHIPPED → DELIVERED
